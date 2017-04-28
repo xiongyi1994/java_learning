@@ -1,6 +1,11 @@
 package keywords;
 
-public class Static01 {
+public class StaticProperty {
+	
+	/*
+	 * static声明属性，则这个属性称为全局属性（静态属性、类属性）
+	 * */
+	
 	static int a = 1;
 	int b = 1;
 	

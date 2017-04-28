@@ -3,7 +3,7 @@ package arraylist;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListToString {
+public class ToString {
 	
 	/*
 	 * toString()方法可以将一个 ArrayList 转换为一个 String
