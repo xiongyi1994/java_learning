@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 
 // ArrayList 是 List 的子类，可以直接通过对象的多态性为List接口实例化。
-// 动态数组？
+// 动态数组
 
 public class ArrayList01 {
 	public static void main(String[] args) {
