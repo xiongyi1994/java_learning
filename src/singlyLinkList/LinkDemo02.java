@@ -10,7 +10,7 @@ public class LinkDemo02 {
 		link.addNode("C");
 		link.addNode("D");
 		link.addNode("E");
-		System.out.println("========删除之前=======");
+		System.out.println("===========删除之前=========");
 		link.printNode();
 		link.deleteNode("C");
 		link.deleteNode("D");
