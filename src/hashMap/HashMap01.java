@@ -18,7 +18,6 @@ public class HashMap01 {
 		hashMap.put("zhangman", 21);
 		
 		System.out.println(hashMap);
-		
 	}
 	
 }
