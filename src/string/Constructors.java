@@ -32,6 +32,8 @@ public class Constructors {
 		System.out.println(char05);
 		String string05 = new String(char05);
 		System.out.println(string05);
+		
+		String aString = "a";
 	}
 	
 }
