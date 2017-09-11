@@ -1,9 +1,13 @@
 package annotation;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+
 public class Target {
-	
+
 	/*
-	 * @Target说明了Annotation所修饰的对象
+     * @Target说明了Annotation所修饰的对象
 	 * 可被用于package、type（类、接口、枚举、Annotation类型）、类型成员（方法、构造方法、成员变量、枚举值）、方法参数和本地变量
 	 * 在Annotation类型的声明中使用了target可更加明晰其修饰的目标
 	 * 
@@ -20,8 +24,8 @@ public class Target {
 　　　*　  7.TYPE:用于描述类、接口(包括注解类型) 或enum声明
 	 * 
 	 * */
-	
-	public static void main(String[] args) {
-		
-	}
+
+    public static void main(String[] args) {
+
+    }
 }
