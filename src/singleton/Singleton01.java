@@ -2,7 +2,7 @@ package singleton;
 
 class Singleton{
 	// 在内部产生本类的实例化对象，将属性封装
-	private static Singleton instance = new Singleton();
+	private static final Singleton instance = new Singleton();
 	private Singleton(){ // 将构造方法进行封装
 	}
 	public static Singleton getInstance(){
