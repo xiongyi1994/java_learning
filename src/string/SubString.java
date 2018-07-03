@@ -13,7 +13,7 @@ public class SubString {
 		
 		// substring(int beginIndex,int endIndex)
 		// 以字符串的开始索引和结束索引来截取子串
-		String subString2 = string.substring(1, string.length()-1);
+		String subString2 = string.substring(5,7);
 		System.out.println(subString2);
 	}
 	

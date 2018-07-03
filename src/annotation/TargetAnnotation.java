@@ -3,8 +3,20 @@ package annotation;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 
+@Target(ElementType.TYPE)
+@interface Table {
+    /*
+    * 数据表名称注解，默认值为类名称
+    * */
+    public String tableName() default "className";
+}
 
-public class Target {
+@Target(ElementType.FIELD)
+@interface NoDBColumn {
+
+}
+
+public class TargetAnnotation {
 
 	/*
      * @Target说明了Annotation所修饰的对象

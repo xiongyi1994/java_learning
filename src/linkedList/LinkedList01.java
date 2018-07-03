@@ -1,8 +1,8 @@
-package linkedlist;
+package linkedList;
 
 import java.util.LinkedList;
 
-public class Linkedlist01 {
+public class LinkedList01 {
 	public static void main(String[] args) {
 		LinkedList<String> linkedList = new LinkedList<String>();
 		linkedList.add("A");

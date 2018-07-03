@@ -8,11 +8,11 @@ public class Demo1 {
 		binarySearchTree.addNode(3);
 		binarySearchTree.addNode(6);
 		binarySearchTree.addNode(7);
-		binarySearchTree.printAllNode();
+//		binarySearchTree.printAllNode();
 		binarySearchTree.printDataMax2Min();
 		System.out.println();
-		binarySearchTree.printDataMin2Max();
+//		binarySearchTree.printDataMin2Max();
 		System.out.println();
-		System.out.println(binarySearchTree.findNode(3));
+//		System.out.println(binarySearchTree.findNode(3));
 	}
 }

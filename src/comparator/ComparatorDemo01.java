@@ -3,8 +3,6 @@ package comparator;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import keywords.this01;
-
 class Student{
 	private String name;
 	private int age;

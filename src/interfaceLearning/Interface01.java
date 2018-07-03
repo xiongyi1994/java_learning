@@ -2,6 +2,11 @@ package interfaceLearning;
 
 interface A {
 	public abstract void print();
+
+	// 接口不能有构造函数
+	/*public A(){
+		
+	}*/
 }
 
 class B implements A {

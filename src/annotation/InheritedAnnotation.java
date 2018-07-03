@@ -1,13 +1,15 @@
 package annotation;
 
-public class Inherited {
+import java.lang.annotation.Inherited;
+
+public class InheritedAnnotation {
 
     /*
-    * @Inherited 元注解是一个标记注解，@Inherited阐述了某个被标注的类型是被继承的。
+    * @InheritedAnnotation 元注解是一个标记注解，@Inherited阐述了某个被标注的类型是被继承的。
     * 如果一个使用了@Inherited修饰的annotation类型被用于一个class，则这个annotation将被用于该class的子类。
     * */
 
-    @java.lang.annotation.Inherited
+    @Inherited
     @interface Greeting {
         public enum FontColor {BULE, RED, GREEN};
         String name();

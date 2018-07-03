@@ -8,6 +8,7 @@ public class IntToChar {
 		
 		// System.out.println((char) intNum); 报错 can't cast int to char
 		
+		
 	}
 	
 }

@@ -6,6 +6,6 @@ public class Set01 {
 	 * Set接口的实例无法像List接口那样可以进行双向输出，因为此接口没有提供像List接口定义的get(int index)方法
 	 * */
 	public static void main(String[] args) {
-		
+
 	}
 }

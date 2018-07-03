@@ -1,6 +1,7 @@
 package arraylist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -36,5 +37,7 @@ public class ArrayList01 {
 		for(int i = 0;i<allList.size();i++){
 			System.out.print(allList.get(i)+"、");
 		}
+		
+		ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList("a,b,c".split(",")));
 	}
 }

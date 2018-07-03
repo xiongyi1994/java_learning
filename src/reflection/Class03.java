@@ -49,6 +49,13 @@ public class Class03 {
 		person.setName("李兴华");
 		person.setAge(30);
 		System.out.println(person);
+		Class<?> class1 = null;
+		try {
+			class1 = Class.forName("reflection.X1");
+		} catch (ClassNotFoundException e) {
+			// TODO: handle exception
+		}
+		System.out.println(class1.getName());
 	}
 	
 }

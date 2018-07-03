@@ -3,13 +3,14 @@ package thread;
 class MyThreadOfRunable implements Runnable{
 
 	private String name;
+	
+	// 构造函数
 	public MyThreadOfRunable(String name) {
-		// TODO Auto-generated constructor stub
 		this.name = name;
 	}
+	
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		for (int i = 0; i < 10; i++) {
 			System.out.println(name + "运行，i = " + i);
 		}
@@ -30,4 +31,5 @@ public class Runnable01 {
 		t1.start();
 		t2.start();
 	}
+	
 }

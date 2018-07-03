@@ -3,12 +3,18 @@ package serializable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.Serializable;
+
+/*
+ * Java 序列化的三种主要用途
+ * 1、作为一种持久化格式
+ * 2、作为一种通信数据格式
+ * 3、作为一种拷贝、克隆机制
+ * */
 
 class Person implements Serializable{
 	private String name;

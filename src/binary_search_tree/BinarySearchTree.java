@@ -61,8 +61,8 @@ public class BinarySearchTree {
 			else 
 				return find(node.rchild, data);
 		}
-		public void delete(float data){
-			if(this.data == data){
+		static void delete(Node node,float data){
+			if(node.data == data){
 				
 			}
 		}
@@ -80,7 +80,7 @@ public class BinarySearchTree {
 	}
 	
 	public void deleteNode(float data){
-		this.root.delete(data);
+		Node.delete(root,data);
 	}
 	
 	public void printAllNode(){

@@ -21,7 +21,6 @@ class Student implements Comparable<Student>{
 	
 	@Override
 	public int compareTo(Student stu) { // 覆写compareTo()方法，实现排序规则的应用
-		// TODO Auto-generated method stub
 		if(this.score > stu.score){
 			return -1;
 		}else if(this.score < stu.score){

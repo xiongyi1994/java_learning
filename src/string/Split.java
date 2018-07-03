@@ -16,6 +16,10 @@ public class Split {
 			System.out.println(array[i]);
 		}
 		
+		String bString = "a,b,c,,";
+		String[] array_2 = bString.split(",");
+		System.out.println(array_2.toString());
+		
 	}
 	
 }

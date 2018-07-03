@@ -1,14 +1,24 @@
 package annotation;
 
 import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-//@TargetAnnotation(ElementType.FIELD)
-//@interface Column {
-//
-//}
+/*
+* Column注解的的RetentionPolicy的属性值是RUTIME,这样注解处理器可以通过反射，获取到该注解的属性值，从而去做一些运行时的逻辑处理
+* */
 
-public class Retention {
+public class RetentionAnnotation {
+
+    @Target(ElementType.FIELD)
+    @Retention(RetentionPolicy.RUNTIME)
+    @interface Column {
+        String name() default "fieldName";
+        String setFuncName() default "setField";
+        String getFuncName() default "getField";
+        boolean defaultDBValue() default false;
+    }
 
     /*
     * 定义了Annotation被保留的时间的长短：某些Anotation仅出现在源码中，而被编译器丢弃

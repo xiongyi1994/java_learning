@@ -2,7 +2,7 @@ package algorithm.sort;
 
 public class HeapSort {
     public static void main(String[] args) {
-        int[] a = {5, 2, 7, 3, 0, 0, 0, 0, 0,1,2,3,4,5,67,8,456,45,645,645,645,6,456,};
+        int[] a = {5, 2, 7, 3, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8};
         heapSort(a);
         print(a);
     }
@@ -28,7 +28,7 @@ public class HeapSort {
             swap(a, i, max);
         }
     }
-
+    
     private static void swap(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];

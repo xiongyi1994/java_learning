@@ -8,5 +8,12 @@ public class HashSet01 {
 	 * */
 	public static void main(String[] args) {
 		HashSet<Integer> hashSet = new HashSet<Integer>();
+		hashSet.add(1);
+		hashSet.add(2);
+		Object object[] = new Object[10];
+		object = hashSet.toArray();
+		for (int i = 0; i < object.length; i++) {
+			System.out.println(object[i]);
+		}
 	}
 }

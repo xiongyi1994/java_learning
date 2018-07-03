@@ -31,7 +31,7 @@ public class Singleton01 {
 		s1.print();
 		s2.print();
 		s3.print();
-		
+
 	}
 	
 }
