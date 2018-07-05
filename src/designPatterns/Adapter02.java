@@ -26,23 +26,27 @@ public class Adapter02 {
 		
 		private Source source;
 		
-		public  Wrapper() {
+		public  Wrapper(Source source) {
 			super();
+			this.source = source;
 		}
 		
 		@Override
 		public void method1() {
-			  
+			source.method1();
 		}
 
 		@Override
 		public void method2() {
-			
+			System.out.println("this is the targetable method!");
 		}
 		
 	}
 	
 	public static void main(String[] args) {
-		
+		Source source = new Source();
+		Targetable targetable = new Wrapper(source);
+		targetable.method1();
+		targetable.method2();
 	}
 }
