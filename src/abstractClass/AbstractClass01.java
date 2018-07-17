@@ -1,19 +1,24 @@
 package abstractClass;
 
 abstract class A {
+
 	public abstract void print();
+
 	public A(){
 		// 可以有构造方法
 	}
+
 }
 
 class B extends A {
-	public B(){
-		
-	}
+
+	public B(){ }
+
+	@Override
 	public void print(){
 		System.out.println("Hello World!");
 	}
+
 }
 
 public class AbstractClass01 {
