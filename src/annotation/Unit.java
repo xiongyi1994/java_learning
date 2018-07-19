@@ -1,6 +1,11 @@
 package annotation;
 
 import java.lang.annotation.*;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
 import java.lang.reflect.Field;
 
 @Target(ElementType.FIELD)
@@ -98,7 +103,7 @@ class FruitInfoUnit {
     }
 }
 
-public class Example01 {
+public class Unit {
 
     public static void main(String[] args) {
         FruitInfoUnit.getFruitInfo(Apple.class);
