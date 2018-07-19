@@ -29,3 +29,6 @@ hs_err_pid*
 src/test/*
 
 .settings
+.classpath
+.project
+java_learning.iml
