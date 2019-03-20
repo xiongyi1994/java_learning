@@ -1,10 +1,7 @@
 package hashMap;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map.Entry;
-
-import com.mysql.fabric.xmlrpc.base.Value;
 
 public class HashMapThread {
 	/*

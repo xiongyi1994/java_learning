@@ -14,5 +14,7 @@ public class Final01 {
 		System.out.println(a);
 		//a = 20;
 		//System.out.println(a);
+		FinalEx01 finalEx01 = new FinalEx01();
+		finalEx01.finalFunction();
 	}
 }

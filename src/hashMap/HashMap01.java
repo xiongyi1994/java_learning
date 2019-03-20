@@ -18,6 +18,7 @@ public class HashMap01 {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 		key = "sex";
+		value = "male";
 		System.out.println("================");
 		for(Entry<String, String> entry : hashMap.entrySet()){
 			System.out.println(entry.getKey() + ":" + entry.getValue());
