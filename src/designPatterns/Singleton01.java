@@ -4,9 +4,10 @@ public class Singleton01 {
 	/*
 	 * 懒汉式单例
 	 * */
-	private Singleton01(){};
-	private static Singleton01 single = null;
-	
+  private static Singleton01 single = null;
+
+  private Singleton01(){}
+
 	// 静态工厂方法
 	public static Singleton01 getInstance() {
 		if (single == null) {
@@ -19,6 +20,7 @@ public class Singleton01 {
 		int threadNum = 100;
 		for (int i = 0; i < threadNum; i++) {
 			new Thread() {
+			  @Override
 				public void run() {
 					System.out.println(Singleton01.getInstance()); // 多线程的情况下可能会出现多个Singleton实例
 				};

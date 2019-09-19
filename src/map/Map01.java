@@ -1,7 +1,6 @@
 package map;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Map01 {
     /*
@@ -16,7 +15,8 @@ public class Map01 {
      * IdentityHashMap: key可以重复的Map集合
      * */
     public static void main(String[] args) {
-        Map<String, Integer> map = null;
+        HashMap<String, Integer> map = new HashMap<>();
+
         HashMap<String, Integer> hashMap;
     }
 }
