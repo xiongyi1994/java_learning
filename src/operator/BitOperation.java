@@ -30,5 +30,11 @@ public class BitOperation {
 		 * >>> 右移
 		 * 用0填充高位
 		 * */
+
+		/*
+		 * ^ 按位异或
+		 * 相同为0，不同为1
+		 */
+    System.out.println(a ^ b); // -> 1
 	}
 }

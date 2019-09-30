@@ -13,12 +13,12 @@ class A {
 	
 	// 保护成员
 	protected int A_d = 0;
+
+	int A_e = 0;
 	
 	// 构造方法
 	public A() {
-
 	}
-	
 	
 }
 
@@ -31,5 +31,6 @@ class B extends A {
 public class Extends01 {
 	public static void main(String[] args) {
 		B b = new B();
+    System.out.println(b.A_d);
 	}
 }

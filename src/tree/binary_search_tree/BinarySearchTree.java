@@ -1,14 +1,17 @@
-package binary_search_tree;
+package tree.binary_search_tree;
 
 public class BinarySearchTree {
 	
 	static class Node{
+
 		private float data;
 		private Node lchild;
 		private Node rchild;
+
 		public Node(float data){
 			this.data = data;
 		}
+
 		public void print(){
 			String lchildData = (this.lchild == null)? "null" : String.valueOf(this.lchild.data) ;
 			String rchildData = (this.rchild == null)? "null" : String.valueOf(this.rchild.data) ;
@@ -20,6 +23,7 @@ public class BinarySearchTree {
 				this.rchild.print();
 			}
 		}
+
 		static void printMax2Min(Node node){
 			if(node == null)
 				return;
@@ -27,6 +31,7 @@ public class BinarySearchTree {
 			System.out.print(String.valueOf(node.data) + '、');
 			printMax2Min(node.lchild);
 		}
+
 		static void printMin2Max(Node node){
 			if(node == null)
 				return;
@@ -34,6 +39,7 @@ public class BinarySearchTree {
 			System.out.print(String.valueOf(node.data) + '、');
 			printMin2Max(node.rchild);
 		}
+
 		public void add(Node newNode){
 			if(newNode.data > this.data){
 				if(this.rchild == null){
@@ -51,6 +57,7 @@ public class BinarySearchTree {
 				System.out.println("the data " + newNode.data + " you want to save is exist");
 			}
 		}
+
 		static boolean find(Node node,float data){
 			if(node == null)
 				return false;
@@ -61,11 +68,13 @@ public class BinarySearchTree {
 			else 
 				return find(node.rchild, data);
 		}
+
 		static void delete(Node node,float data){
 			if(node.data == data){
 				
 			}
 		}
+
 	}
 	
 	private Node root;

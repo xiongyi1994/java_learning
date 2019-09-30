@@ -1,4 +1,4 @@
-package avl_tree;
+package tree.avl_tree;
 
 public class AvlTree {
 
