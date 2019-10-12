@@ -6,6 +6,8 @@ package leetcode;
  */
 public class Ex1 {
 
-  
+  public int[] twoSum(int[] nums, int target) {
+    return null;
+  }
 
 }
