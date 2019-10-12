@@ -4,15 +4,16 @@ package leetcode;
  * describe: Z字形变换
  *
  */
-public class Six {
+public class Ex6 {
 
   public static void main(String[] args) {
-    Six six = new Six();
+    Ex6 six = new Ex6();
     String test = "A";
     int numRows = 2;
     System.out.println(six.convert(test, numRows));
   }
 
+  /** 找规律 **/
   public String convert(String s, int numRows) {
     if ("".equals(s)) {
       return "";

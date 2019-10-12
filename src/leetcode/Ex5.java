@@ -6,11 +6,11 @@ package leetcode;
  * @author yi.xiong3@renren-inc.com
  * @date 2019/09/29
  */
-public class Five {
+public class Ex5 {
 
   public static void main(String[] args) {
     String test = "ab";
-    Five five = new Five();
+    Ex5 five = new Ex5();
     System.out.println(five.longestPalindrome(test));
   }
 
