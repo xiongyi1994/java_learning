@@ -6,8 +6,8 @@ public class Proxy01 {
 	 * 代理类 替 原对象 进行一些操作
 	 * */
 	
-	static interface Sourceable {
-		public void method ();
+	interface Sourceable {
+		void method();
 	}
 	
 	static class Source implements Sourceable {
