@@ -18,8 +18,20 @@ public class Ex206 {
 
   }
 
+  /**
+   * 时间 100
+   * 空间 42.54
+   * **/
   public ListNode reverseList(ListNode head) {
-    return null;
+    ListNode rev = null;
+    ListNode curr = head;
+    while (curr != null) {
+      ListNode temp = curr.next;
+      curr.next = rev;
+      rev = curr;
+      curr = temp;
+    }
+    return rev;
   }
 
 }
