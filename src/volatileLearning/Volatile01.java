@@ -11,7 +11,8 @@ public class Volatile01 {
             public void run() {
                 System.out.println("start");
                 while (end) {
-                    System.out.println("running!");
+                    // sout里面使用了 synchronized 所以相当于 volatile 修改类变量
+                    //System.out.println("running!");
                 }
                 System.out.println("stop");
             }

@@ -2,6 +2,15 @@ package algorithm.sort;
 
 import java.util.Scanner;
 
+/**
+ * 快速排序 时间复杂度 O(nlogn)
+ * 最坏情况时间复杂度 O(n^2)
+ * 不稳定排序
+ *
+ * 先找一个 中枢 元素
+ * 从左开始，找到一个比中枢元素大的大元素，与其交换
+ * 从右开始，找到一个比中枢元素小得元素，与其交换
+ * **/
 public class QuickSort {
     private static int[] array;
 
@@ -19,10 +28,11 @@ public class QuickSort {
 
     private static void print(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            if (i != arr.length - 1)
+            if (i != arr.length - 1) {
                 System.out.print(arr[i] + " ");
-            else
+            } else {
                 System.out.print(arr[i]);
+            }
         }
     }
 
@@ -34,21 +44,25 @@ public class QuickSort {
 
     private static void quickSort(int start, int end) {
 
-        if (start >= end)
+        if (start >= end) {
             return;
+        }
         int mid = array[end];
         int left = start, right = end - 1;
         while (left < right) {
-            while (array[left] <= mid && left < right)
+            while (array[left] <= mid && left < right) {
                 left++;
-            while (array[right] >= mid && left < right)
+            }
+            while (array[right] >= mid && left < right) {
                 right--;
+            }
             swap(left, right);
         }
-        if (array[left] >= array[end])
+        if (array[left] >= array[end]) {
             swap(left, end);
-        else
+        } else {
             left++;
+        }
         quickSort(start, left - 1);
         quickSort(left + 1, end);
     }

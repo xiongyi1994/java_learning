@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 笛卡尔积
  * **/
-public class Dikaer {
+public class CartesianProduct {
 
     public static void main(String[] args) {
         List<String> a = new ArrayList<>();
@@ -30,7 +30,7 @@ public class Dikaer {
         dimValue.add(c);
         dimValue.add(d);
 
-        List<String> decartes = new Dikaer().decartes(dimValue);
+        List<String> decartes = new CartesianProduct().decartes(dimValue);
 
         for (String decarte : decartes) {
             System.out.println(decarte);

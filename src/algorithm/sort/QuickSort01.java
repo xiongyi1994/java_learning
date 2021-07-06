@@ -7,7 +7,7 @@ public class QuickSort01 {
         print(a);
     }
 
-    private static void quick(int a[], int low, int high) {
+    private static void quick(int[] a, int low, int high) {
         int left = low;
         int right = high;
         if (left < right) {
