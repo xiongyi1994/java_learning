@@ -1,5 +1,7 @@
 package threadpool_learning;
 
+import java.util.concurrent.Executors;
+
 public class ThreadPoolType {
 	
 	/*
@@ -12,6 +14,6 @@ public class ThreadPoolType {
 	 * 3、newSingleThreadExecutor
 	 * */
 	public static void main(String[] args) {
-		
+
 	}
 }

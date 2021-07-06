@@ -18,6 +18,8 @@ public class ToString {
 
     arrayList.add("yi");
 
+    arrayList.add(null);
+
     String aString = arrayList.toString();
 
     System.out.println(aString);

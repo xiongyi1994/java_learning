@@ -19,7 +19,8 @@ public class Split {
 		String bString = "a,b,c,,";
 		String[] array_2 = bString.split(",");
 		System.out.println(array_2.toString());
-		
+
+    System.out.println("111|222".split("\\|")[0]);
 	}
 	
 }
